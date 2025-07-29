@@ -6,6 +6,7 @@
 
 ### 1. 安装依赖
 在ComfyUI的Python环境中安装必要的依赖：
+需安装好ffmpeg
 
 ```bash
 pip install torch numpy scipy openai-whisper
@@ -15,6 +16,10 @@ pip install torch numpy scipy openai-whisper
 ```bash
 pip install -r requirements.txt
 ```
+安装whisper
+pip install git+https://github.com/openai/whisper.git
+pip install --upgrade --no-deps --force-reinstall git+https://github.com/openai/whisper.git
+
 
 ### 2. 放置节点文件
 将整个`whisper`文件夹复制到ComfyUI的`custom_nodes`目录中：
